@@ -1,13 +1,61 @@
-# React + Vite
+# 🎬 React Movie Finder App (with Vite + Appwrite + TMDB)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast and modern movie discovery application built using **React**, **Vite**, **TMDB API**, and **Appwrite**. Users can search movies, view trending content, and enjoy a sleek interface with real-time search tracking and popularity metrics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search for Movies** using TMDB API
+- 📈 **Track Searches** using Appwrite's database
+- 🔥 **Trending Section** shows most-searched movies
+- 💡 **Debounced Input** for performance (custom hook)
+- 🎨 Clean and responsive UI
+- ⚙️ Built with **Vite** for lightning-fast development
+- 🌐 Environment-safe API keys using `.env`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-Downlaod npm i react-use
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ByAnshul/Movie_React.git
+   cd Movie_React
+Install dependencies
+
+bash
+
+npm install
+Install optional packages
+
+bash
+
+npm i react-use
+Set up environment variables
+
+Create a .env file in the root and add:
+
+env
+
+VITE_TMDB_API_KEY=your_tmdb_api_key
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
+VITE_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+Run the app
+
+bash
+
+npm run dev
+🧰 Tech Stack
+React – UI library
+
+Vite – Frontend build tool
+
+TMDB API – Movie data provider
+
+Appwrite – Backend service to store search analytics
+
+Tailwind CSS – Utility-first CSS framework
+
+Custom Hooks – For debounce input handling
